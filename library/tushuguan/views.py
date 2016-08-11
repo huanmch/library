@@ -7,6 +7,7 @@ from django.views.decorators.csrf import csrf_exempt, csrf_protect
 from django.core.context_processors import csrf
 
 from tushuguan.queryset import *
+from tushuguan.mix import *
 from tushuguan.models import *
 import datetime, hashlib
 
@@ -49,3 +50,35 @@ def ajax_index_page(request):
             return HttpResponse('3')
         else:
             return HttpResponse('XXX')
+
+'''
+注册页
+arguments:request
+'''
+def register_page(request):
+    c = {}
+    return render_to_response('tushuguan/registration.html', c)
+
+'''
+导航页
+arguments:request
+'''
+def nav_page(request):
+    c = {}
+    result=judge_islogin(request,c)
+    if result=='T':
+        return render_to_response('tushuguan/nav.html', c)
+    else:
+        return HttpResponseRedirect('../index/')
+
+'''
+借书页
+arguments:request
+'''
+def borrow_page(request):
+    c ={}
+    result=judge_islogin(request,c)
+    if result=='T':
+        return render_to_response('tushuguan/borrow.html', c)
+    else:
+        return HttpResponseRedirect('../index/')
