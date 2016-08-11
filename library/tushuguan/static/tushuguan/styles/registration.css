@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-08-04 20:31:22
+ * @version $Id$
+ */
+* {
+    margin:0 auto;
+}
+body {
+    background:url(../images/whole-background.png) no-repeat;
+    width:100%;height:1440px;
+}
+.shelf1 {
+    position:relative;
+    left:0px;
+    top:115px;
+}
+.shelf2 {
+    position:absolute;
+    left:635px;
+    top:215px;
+}
+.wood {
+    position:absolute;
+    background:url(../images/wood.png) no-repeat;
+    width:415px; 
+    height:636px;
+    top:215px;
+    left:530px;
+}
+.registration {
+    position:absolute;
+    width:280px;
+    height:420px;
+    top:150px;
+    left:77px;
+
+}
+.registration1 {
+    position:relative;
+    font:bold 24px "Microsoft YaHei";
+    text-align: center;
+   /* line-height:24px;*/
+}
+.registration2 {
+    font:bold 18px "Microsoft YaHei";
+    line-height:48px;
+    margin-top:15px;
+}
+.name {
+    width:150px;
+    height:27px;
+    position:absolute;
+    top:57px;  
+    left:100px;
+    background-color:#ffffff;
+    border:1px solid #f3e0bd;
+}
+.xuehao {
+    width:150px;
+    height:27px;
+    position:absolute;
+    top:107px;  
+    left:100px;
+    background-color:#ffffff;
+    border:1px solid #f3e0bd;
+}
+.mima {
+    width:150px;
+    height:27px;
+    position:absolute;
+    top:155px;
+    left:100px;
+    background-color:#ffffff;
+    border:1px solid #f3e0bd;
+}
+.lianxi {
+    width:150px;
+    height:27px;
+    position:absolute;
+    top:203px;  
+    left:100px;
+    background-color:#ffffff;
+    border:1px solid #f3e0bd;
+}
+.adress {
+    width:150px;
+    height:27px;
+    position:absolute;
+    top:250px;
+    left:100px;
+    background-color:#ffffff;
+    border:1px solid #f3e0bd;
+}
+.registration3 {
+    position:relative;
+    font:16px "Microsoft YaHei";
+    text-align: center;
+    top:13px;
+}
+.zhuce {
+    background-color:#66a1a0;
+    border:1px solid #f3e0bb;
+    position:absolute;
+    top:330px;
+    left:25px;
+    width:100px;
+    height:35px;
+    font:bold 18px "Microsoft YaHei";
+    text-align: center;
+    border-radius:7px;
+}
+.denglu {
+    background-color:#66a1a0;
+    border:1px solid #f3e0bb;
+    position:absolute;
+    top:330px;
+    left:140px;
+    width:100px;
+    height:35px;
+    font:bold 18px "Microsoft YaHei";
+    text-align: center;
+    border-radius:7px;
+}

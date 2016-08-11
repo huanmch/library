@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-08-04 20:31:22
+ * @version $Id$
+ */
+* {
+    margin:0 auto;
+}
+body {
+    background:url(../images/whole-background.png) no-repeat;
+    width:100%;height:1440px;
+}
+.shelf1 {
+    position:relative;
+    left:0px;
+    top:115px;
+}
+.shelf2 {
+    position:absolute;
+    left:635px;
+    top:215px;
+}
+.wood {
+    position:absolute;
+    background:url(../images/wood.png) no-repeat;
+    width:415px; 
+    height:636px;
+    top:215px;
+    left:530px;
+}
+.entry {
+    position:absolute;
+    width:250px;
+    height:230px;
+    top:170px;
+    left:85px;
+
+}
+.entry1 {
+    position:relative;
+    font:bold 24px "Microsoft YaHei";
+    text-align: center;
+   /* line-height:24px;*/
+}
+.entry2 {
+    font:bold 18px "Microsoft YaHei";
+    line-height:48px;
+    margin-top:15px;
+}
+.xuehao {
+    width:180px;
+    height:27px;
+    position:absolute;
+    top:50px;  
+    left:50px;
+    background-color:#ffffff;
+    border:6px solid #f3e0bd;
+}
+.mima {
+    width:180px;
+    height:27px;
+    position:absolute;
+    top:105px;
+    left:50px;
+    background-color:#ffffff;
+    border:6px solid #f3e0bd;
+}
+.entry3 {
+    position:relative;
+    font:16px "Microsoft YaHei";
+    text-align: center;
+    top:20px;
+}
+.denglu {
+    background-color:#66a1a0;
+    border:1px solid #f3e0bb;
+    position:absolute;
+    top:190px;
+    left:25px;
+    width:100px;
+    height:35px;
+    font:bold 18px "Microsoft YaHei";
+    text-align: center;
+    border-radius:7px;
+}
+.zhuce {
+    background-color:#66a1a0;
+    border:1px solid #f3e0bb;
+    position:absolute;
+    top:190px;
+    left:140px;
+    width:100px;
+    height:35px;
+    font:bold 18px "Microsoft YaHei";
+    text-align: center;
+    border-radius:7px;
+}

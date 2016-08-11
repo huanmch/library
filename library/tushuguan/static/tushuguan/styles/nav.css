@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-07-24 23:37:26
+ * @version $Id$
+ */
+* {
+    margin:0 auto;
+}
+body {
+/*height:600px;*/
+    /*background-color:#ddd9ac;*/
+    background:url(../images/whole-background.png) no-repeat;
+    width:1440px; height:1440px;
+}
+/*.whole-background {
+    width:1440px;
+    height:1440px;
+}*/
+.desk1 {
+    position:relative;
+    left:200px;
+    top:570px;
+}
+.nav1 {
+    position:relative;
+    left:-30px;
+    top:365px;
+}
+.desk2 {
+    position:relative;
+    left:135px;
+    top:615px;
+}
+.nav2 {
+    position:relative;
+    left:-100px;
+    top:405px;
+}
+.desk3 {
+    position:relative;
+    left:60px;
+    top:570px;
+}
+.nav3 {
+    position:relative;
+    left:-175px;
+    top:365px;
+}
+.shelf3 {
+    position:relative;
+    left:0px;
+    top:-145px;
+}
+.shelf4 {
+    position:relative;
+    left:1055px;
+    top:-20px;
+}
