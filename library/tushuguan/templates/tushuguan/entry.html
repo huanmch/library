@@ -9,7 +9,7 @@
 <meta name="keywords" content="">
 <link href="{% static 'tushuguan/styles/entry.css' %}" rel="stylesheet">
 <script src="{% static 'tushuguan/scripts/jquery-1.7.2.min.js' %}"></script>
-<script src="{% static 'tushuguan/scripts/entry.js' %}"></script> 
+<script src="{% static 'tushuguan/scripts/entry.js' %}"></script>
 </head>
 <body>
     <img class="shelf1" src="{% static 'tushuguan/images/left-bookshelf.png' %}">
@@ -18,10 +18,10 @@
         <div class="entry">
             <div class="entry1">登录</div>
             <form class="entry2">
-                学号<input name="name" type="text" placeholder=""  class="xuehao"><br/>
-                密码<input name="name" type="password" placeholder=""  class="mima">
-                <button type="submit"  class="denglu">登录</button>
-                <button type="submit"  class="zhuce">注册</button>
+                学号<input name="id" type="text" placeholder=""  class="xuehao"><br/>
+                密码<input name="pw" type="password" placeholder=""  class="mima">
+                <button type="submit"  class="denglu" name="login">登录</button>
+                <button type="submit"  class="zhuce" name="sign">注册</button>
             </form>
             <div class="entry3">
                 没有账号？请先注册
@@ -29,6 +29,6 @@
 
         </div>
     </div>
-    
+
 </body>
 </html>

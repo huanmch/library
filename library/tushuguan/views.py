@@ -15,7 +15,7 @@ import datetime, hashlib
 arguments:request
 '''
 def auto_index(request):
-    return HttpResponseRedirect('index/')
+    return HttpResponseRedirect('entry/')
 
 '''登录页
 arguments:request,
