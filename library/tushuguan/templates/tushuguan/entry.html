@@ -8,7 +8,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <link href="{% static 'tushuguan/styles/entry.css' %}" rel="stylesheet">
-<script src="{% static 'tushuguan/scripts/jquery-1.7.2.min.js' %}"></script>
+<script src="{% static 'tushuguan/scripts/jquery-1.10.2.min.js' %}"></script>
 <script src="{% static 'tushuguan/scripts/entry.js' %}"></script>
 </head>
 <body>
@@ -19,9 +19,9 @@
             <div class="entry1">登录</div>
             <form class="entry2">
                 学号<input name="id" type="text" placeholder=""  class="xuehao"><br/>
-                密码<input name="pw" type="password" placeholder=""  class="mima">
-                <button type="submit"  class="denglu" name="login">登录</button>
-                <button type="submit"  class="zhuce" name="sign">注册</button>
+                密码<input type="password" placeholder=""  class="mima" name="pw">
+                <input type="button" name="login" class="denglu" value="登录">
+                <input type="button" name="register" class="zhuce" onclick="window.location.href='/library/register/';" value="注册">
             </form>
             <div class="entry3">
                 没有账号？请先注册

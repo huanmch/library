@@ -100,9 +100,11 @@ def outer_password_enter(username,password):
 '''
 def local_password_enter(username,password):
     tuser=users.objects.filter(stuid=username)
-    #raise Exception(tuple((tuser[0].code).split('$'))[1]==hashlib.sha1(tuple((tuser[0].code).split('$'))[0] + password).hexdigest())
+    #(tuple((tuser[0].code).split('$'))[1]==hashlib.sha1(tuple((tuser[0].code).split('$'))[0] + password).hexdigest())
     if tuser:
-        if tuple((tuser[0].code).split('$'))[1] == hashlib.sha1(tuple((tuser[0].code).split('$'))[0] + password).hexdigest():
+        md5 = hashlib.md5()
+        md5.update(password+username)
+        if tuser[0].code==md5.hexdigest():
             return 'T'
         else:
             return 'F'

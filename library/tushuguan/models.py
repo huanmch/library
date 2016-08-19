@@ -19,7 +19,7 @@ class users(models.Model):
     realname = models.CharField(max_length=30)       #真实姓名
     tel = models.CharField(max_length=15)            #手机号
     email = models.CharField(max_length=60)          #邮箱
-
+    group = models.CharField(max_length=30)          #所属事业群
     borrowstate = models.CharField(max_length=100)   #借书状态,两位数,十位保留用的
                                                      #个位:0-8为借阅的书总量
     state = models.SmallIntegerField()               #当前用户状态,0为正常,1为账号冻结

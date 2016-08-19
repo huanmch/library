@@ -9,7 +9,7 @@
 <meta name="keywords" content="">
 <link href="{% static 'tushuguan/styles/registration.css' %}" rel="stylesheet">
 <script src="{% static 'tushuguan/scripts/jquery-1.7.2.min.js' %}"></script>
-<script src="{% static 'tushuguan/scripts/registration.js' %}"></script> 
+<script src="{% static 'tushuguan/scripts/registration.js' %}"></script>
 </head>
 <body>
     <img class="shelf1" src="{% static 'tushuguan/images/left-bookshelf.png' %}">
@@ -19,12 +19,12 @@
             <div class="registration1">注册</div>
             <form class="registration2">
                 姓名<input name="name" type="text" placeholder=""  class="name"><br/>
-                学号<input name="name" type="text" placeholder=""  class="xuehao"><br/>
-                密码<input name="name" type="password" placeholder=""  class="mima"><br/>
-                联系方式<input name="name" type="text" placeholder=""  class="lianxi"><br/>
-                所属事业群<input name="name" type="text" placeholder=""  class="adress">
-                <button type="submit"  class="zhuce">注册</button>
-                <button type="submit"  class="denglu">登录</button>
+                学号<input name="id" type="text" placeholder=""  class="xuehao"><br/>
+                密码<input name="pw" type="password" placeholder=""  class="mima"><br/>
+                联系方式<input name="tel" type="text" placeholder=""  class="lianxi"><br/>
+                所属事业群<input name="group" type="text" placeholder=""  class="adress">
+                <input type="button" name="register" class="zhuce" value="注册">
+                <input type="button" name="login" class="denglu" onclick="window.location.href='/library/entry/';" value="登录">
             </form>
             <div class="registration3">
                 已注册？请直接登录
@@ -32,6 +32,6 @@
 
         </div>
     </div>
-    
+
 </body>
 </html>

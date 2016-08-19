@@ -59,6 +59,23 @@ def register_page(request):
     c = {}
     return render_to_response('tushuguan/registration.html', c)
 
+def ajax_register_page(request):
+    name = request.POST.get('name', '')
+    username = request.POST.get('username', '')
+    password = request.POST.get('password', '')
+    tel = request.POST.get('tel', '')
+    group = request.POST.get('group', '')
+
+    md5 = hashlib.md5()
+    md5.update(password+username)
+
+    users(stuid=username,code=md5.hexdigest(),realname=name,tel=tel,
+        borrowstate=0,state=0,usergroupid=2,group=group).save()
+
+    request.session['stuid']=username
+
+    return HttpResponse('T')
+
 '''
 导航页
 arguments:request
@@ -69,7 +86,7 @@ def nav_page(request):
     if result=='T':
         return render_to_response('tushuguan/nav.html', c)
     else:
-        return HttpResponseRedirect('../index/')
+        return HttpResponseRedirect('../entry/')
 
 '''
 借书页
@@ -81,4 +98,4 @@ def borrow_page(request):
     if result=='T':
         return render_to_response('tushuguan/borrow.html', c)
     else:
-        return HttpResponseRedirect('../index/')
+        return HttpResponseRedirect('../entry/')
