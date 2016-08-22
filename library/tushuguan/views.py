@@ -58,22 +58,40 @@ arguments:request
 def register_page(request):
     c = {}
     return render_to_response('tushuguan/registration.html', c)
-
+@csrf_exempt
 def ajax_register_page(request):
     name = request.POST.get('name', '')
     username = request.POST.get('username', '')
     password = request.POST.get('password', '')
     tel = request.POST.get('tel', '')
     group = request.POST.get('group', '')
-
+    a=1
     md5 = hashlib.md5()
     md5.update(password+username)
+    usernames=users.objects.all()
+    for usernames_1 in usernames:
 
-    users(stuid=username,code=md5.hexdigest(),realname=name,tel=tel,
-        borrowstate=0,state=0,usergroupid=2,group=group).save()
+        if username==usernames_1.stuid:
+            return HttpResponse('usernamesame')
+    if (password ==None or password ==''):
+
+        return HttpResponse('pwnull')
+    if (tel ==None or tel ==''):
+
+        return HttpResponse('telnull')
+
+
+            
+             
+        
+
+
+            
+
+    users(stuid=username,code=md5.hexdigest(),realname=name,tel=tel,borrowstate=0,state=0,usergroupid=2,group=group).save()
 
     request.session['stuid']=username
-
+    
     return HttpResponse('T')
 
 '''
