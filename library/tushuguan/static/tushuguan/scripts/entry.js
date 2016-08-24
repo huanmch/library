@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $("input[name='login']").click(function(){login();});
-    $("input[id='input_pw']").keydown(function (key) {
+    $("input[name='pw']").keydown(function (key) {
         var e = window.event || arguments.callee.caller.arguments[0];
         if (e && e.keyCode == 13) {
             login();

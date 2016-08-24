@@ -89,9 +89,9 @@ DATABASES = {
         #'ENGINE': 'django.db.backends.sqlite3',
         #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'sumsublib',                      # Or path to database file if using sqlite3.
+        'NAME': 'library',                      # Or path to database file if using sqlite3.
         'USER': 'root',                      # Not used with sqlite3.
-        'PASSWORD': '239209',           # Not used with sqlite3.       
+        'PASSWORD': 'test_db_934b',           # Not used with sqlite3.
         'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
         #'HOST': '192.168.0.107',
         'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
