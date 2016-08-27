@@ -9,26 +9,132 @@
 <meta name="keywords" content="">
 <link href="{% static 'tushuguan/styles/borrow.css' %}" rel="stylesheet">
 <script src="{% static 'tushuguan/scripts/jquery-1.7.2.min.js' %}"></script>
-<script src="{% static 'tushuguan/scripts/borrow.js' %}"></script> 
+<script src="{% static 'tushuguan/scripts/borrow.js' %}"></script>
 </head>
 <body>
-    <img class="shelf1" src="{% static 'tushuguan/images/left-bookshelf.png' %}">
-    <img class="shelf2" src="{% static 'tushuguan/images/right-bookshelf.png' %}">
-    <div class="wood">
-        <div class="entry">
-            <div class="entry1">登录</div>
-            <form class="entry2">
-                学号&nbsp;&nbsp;&nbsp;<input name="name" type="text" placeholder=""  class="xuehao"><br/>
-                密码&nbsp;&nbsp;&nbsp;<input name="name" type="password" placeholder=""  class="mima">
-                <button type="submit"  class="denglu">登录</button>
-                <button type="submit"  class="zhuce">注册</button>
-            </form>
-            <div class="entry3">
-                没有账号？请先注册
+    <div class="page">
+        <a href="javascript:void(0)" class="arrow_left"><img src="{% static 'tushuguan/images/arrow_left.png' %}"></a>
+        <div class="label">
+            <div class="label1">
+                借阅通行证
             </div>
-
+            <div class="label2">
+                姓名：
+            </div>
+            <div class="label3">
+                晋江
+            </div>
+            <div class="label4">
+                学号：
+            </div>
+            <div class="label5">
+                201500090000
+            </div>
         </div>
+        <!-- <img src="{% static 'tushuguan/images/logo.png' %}" class="logo"> -->
+        <div class="page_left">
+            <div class="p_l1">
+                <img src="{% static 'tushuguan/images/decorate.png' %}" class="decorate">
+                <div class="benshuxiangqing">本书详情</div>
+            </div>
+            <div class="p_l2">本书已借出</div>
+            <!-- <div class="p_l21">本书正在被我借阅</div> -->
+            <!-- <div class="p_l21">本书可借</div> -->
+            <div class="p_l3">
+                <div class="p_l31"><img src="{% static 'tushuguan/images/book.png' %}"></div>
+                <div class="p_l32">
+                    <div class="p_l32_T1">数学分析</div>
+                    <div class="p_l32_T2">类别：</div>
+                    <div class="p_l32_T3">自然</div>
+                    <div class="p_l32_T4">出版社：</div>
+                    <div class="p_l32_T5">高等教育出版社</div>
+                    <div class="p_l32_T6">编者：</div>
+                    <div class="p_l32_T7">
+                        华东师范大学数学系 焦艳芳，李光敏 编
+                    </div>
+                    <div class="p_l32_T8">编号：</div>
+                    <div class="p_l32_T9">12345678910</div>
+                    <div class="p_l32_T10">出版时间：</div>
+                    <div class="p_l32_T11">2012-01-01</div>
+                </div>
+            </div>
+            <div class="p_l4">
+                <img src="{% static 'tushuguan/images/decorate_left.png' %}" class="decorate_left">
+                <a href="javascript:void(0)" class="woyaoguihuan">我要归还</a>
+            </div>
+            <div class="p_l5">
+                <img src="{% static 'tushuguan/images/decorate_right.png' %}" class="decorate_right">
+                <a href="javascript:void(0)" class="woyaojieyue">我要借阅</a>
+            </div>
+        </div>
+        <div class="page_right">
+            <div class="p_r1">
+                <div class="p_r11">
+                    <img src="{% static 'tushuguan/images/decorate_little.png' %}" class="decorate_little">
+                    <div class="zhengzaijieyue">正在借阅</div>
+                </div>
+                <div class="p_r12">
+                    <div class="book1">
+                        <a href="javascript:void(0)" class="b_l"><img src="{% static 'tushuguan/images/book_little.png' %}"></a>
+                        <a href="javascript:void(0)" class="bookname">数学分析</a>
+                        <a href="javascript:void(0)" class="bianhao">160701-160801</a>
+                    </div>
+                    <div class="book2">
+                        <a href="javascript:void(0)" class="b_l"><img src="{% static 'tushuguan/images/book_little.png' %}"></a>
+                        <a href="javascript:void(0)" class="bookname">高等代数</a>
+                        <a href="javascript:void(0)" class="bianhao">160701-160801</a>
+                    </div>
+                    <div class="book2">
+                        <a href="javascript:void(0)" class="b_l"><img src="{% static 'tushuguan/images/book_little.png' %}"></a>
+                        <a href="javascript:void(0)" class="bookname">复分析</a>
+                        <a href="javascript:void(0)" class="bianhao">160701-160801</a>
+                    </div>
+                </div>
+            </div>
+            <div class="p_r2">
+                <div class="p_r11">
+                    <img src="{% static 'tushuguan/images/decorate_little.png' %}" class="decorate_little">
+                    <div class="zhengzaijieyue">已归还</div>
+                </div>
+                <div class="p_r22">
+                    <a href="javascript:void(0)" class="p_r221">数学分析</a>
+                    <a href="javascript:void(0)" class="p_r222">华东师范大学数学 系焦艳芳，李光敏…</a>
+                </div>
+                <div class="p_r22">
+                    <a href="javascript:void(0)" class="p_r221">数学分析</a>
+                    <a href="javascript:void(0)" class="p_r222">华东师范大学数学 系焦艳芳，李光敏…</a>
+                </div>
+                <div class="p_r22">
+                    <a href="javascript:void(0)" class="p_r221">数学分析</a>
+                    <a href="javascript:void(0)" class="p_r222">华东师范大学数学 系焦艳芳，李光敏…</a>
+                </div>
+                <div class="p_r22">
+                    <a href="javascript:void(0)" class="p_r221">数学分析</a>
+                    <a href="javascript:void(0)" class="p_r222">华东师范大学数学 系焦艳芳，李光敏…</a>
+                </div>
+                <div class="p_r22">
+                    <a href="javascript:void(0)" class="p_r221">数学分析</a>
+                    <a href="javascript:void(0)" class="p_r222">华东师范大学数学 系焦艳芳，李光敏…</a>
+                </div>
+                <div class="p_r22">
+                    <a href="javascript:void(0)" class="p_r221">数学分析</a>
+                    <a href="javascript:void(0)" class="p_r222">华东师范大学数学 系焦艳芳，李光敏…</a>
+                </div>
+                <div class="p_r22">
+                    <a href="javascript:void(0)" class="p_r221">数学分析</a>
+                    <a href="javascript:void(0)" class="p_r222">华东师范大学数学 系焦艳芳，李光敏…</a>
+                </div>
+            </div>
+        </div>
+        <div class="number">
+            <span class="disabled">&lt;</span>
+            <span class="current">1</span>
+            <a href="javascript:void(0)">2</a>
+            <a href="javascript:void(0)">3</a>
+            <a href="javascript:void(0)">4</a>
+            <a href="javascript:void(0)">&gt;</a>
+        </div>
+        <a href="javascript:void(0)" class="arrow_right"><img src="{% static 'tushuguan/images/arrow_right.png' %}"></a>
     </div>
-    
 </body>
 </html>

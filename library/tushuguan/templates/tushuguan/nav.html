@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-{% load staticfiles %}
 <html>
 <head>
 <meta charset="utf-8">
@@ -9,17 +8,22 @@
 <meta name="keywords" content="">
 <link href="{% static 'tushuguan/styles/nav.css' %}" rel="stylesheet">
 <script src="{% static 'tushuguan/scripts/jquery-1.7.2.min.js' %}"></script>
-<script src="{% static 'tushuguan/scripts/nav.js' %}"></script> 
+<script src="{% static 'tushuguan/scripts/nav.js' %}"></script>
 </head>
 <body>
-   <!--  <img class="whole-background" src="{% static 'tushuguan/images/whole-background.png' %}"> -->
-    <div>
-       <img class="desk1" src="{% static 'tushuguan/images/desk1.png' %}">
-       <a href="javascript:void(0)" class="nav1"><img src="{% static 'tushuguan/images/nav1.png' %}"></a>
-       <img class="desk2" src="{% static 'tushuguan/images/desk2.png' %}">
-       <a href="javascript:void(0)" class="nav2"><img src="{% static 'tushuguan/images/nav2.png' %}"></a>
-       <img class="desk3" src="{% static 'tushuguan/images/desk3.png' %}">
-       <a href="javascript:void(0)" class="nav3"><img src="{% static 'tushuguan/images/nav3.png' %}"></a>
+    <div class="nav">
+        <div class="nav1">
+            <img class="desk1" src="{% static 'tushuguan/images/desk1.png' %}">
+            <a href="javascript:void(0)" class="nav11"><img src="{% static 'tushuguan/images/nav1.png' %}" class="nav12"></a>
+        </div>
+        <div class="nav2">
+            <img class="desk2" src="{% static 'tushuguan/images/desk2.png' %}">
+            <a href="javascript:void(0)" class="nav21"><img src="{% static 'tushuguan/images/nav2.png' %}" class="nav22"></a>
+        </div>
+        <div class="nav3">
+            <img class="desk3" src="{% static 'tushuguan/images/desk3.png' %}">
+            <a href="javascript:void(0)" class="nav31"><img src="{% static 'tushuguan/images/nav3.png' %}" class="nav32"></a>
+        </div>
     </div>
     <img class="shelf3" src="{% static 'tushuguan/images/left-bookshelf2.png' %}">
     <img class="shelf4" src="{% static 'tushuguan/images/right-bookshelf2.png' %}">

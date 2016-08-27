@@ -2,7 +2,7 @@
 /**
  * 
  * @authors Your Name (you@example.org)
- * @date    2016-08-04 20:31:22
+ * @date    2016-08-25 17:41:57
  * @version $Id$
  */
 * {
@@ -248,7 +248,7 @@ body {
     text-decoration:none;
 }
 .page_right {
-    width:360px;
+    width:355px;
     height:440px;
     float:left;
     top:110px;
@@ -256,81 +256,109 @@ body {
     position:relative;
 }
 .p_r1 {
-    height:188px;
+    height:81px;
+    border-bottom:1px dashed #6f6e6d;
 }
 .p_r11 {
-    height:39px;
+    width:70px;
+    height:20px;
+    font: 17px "Microsoft YaHei";
+    margin-left:17px;
+    margin-top:10px;
 }
-.decorate_little {
-    margin-left:0px;
+.p_r12 {
+    font:14px "Microsoft YaHei";
+    width:85px;
+    height:30px;
+    background-color:#f6f4d6;
+    margin-left:17px;
+    margin-top:10px;
+    border:1px solid #f2efcf;
+    float: left;
+}
+.p_r13 {
+    width:235px;
+    height:24px;
+    float:left;
+    margin-left:8px;
+    margin-top:10px;
+}
+.search {
+    position:absolute;
+    top:42px;
+    right:7px;
+}
+.p_r2 {
+    height:348px;
+}
+.p_r21 {
+    height:47px;
+    width:178px;
+    float:left;
+}
+.decorate_search {
+    margin-left:5px;
     margin-top:20px;
     float:left;
 }
-.zhengzaijieyue {
+.sousuojieguo {
     width:65px;
     height:20px;
     float:left;
-    margin-top:11px;
-    margin-left:-40px;
+    margin-top:15px;
+    margin-left:-55px;
     font:bold 14px "Microsoft YaHei";
-}
-.p_r12 {
-    height:149px;
-    margin-top:3px;
-}
-.book1 {
-    margin-left:30px;
-    width:105px;
-    float:left;
-}
-.b_l {
-    height:100px;
-    text-align:center;
-    display:block;
-}
-.bookname {
-    font:bold 14px "Microsoft YaHei";
-    text-align:center;
-    height:20px;
-    display:block;
-    color:#343434;
-    text-decoration:none;
-}
-.bianhao {
-    font:12px "Microsoft YaHei";
-    height:20px;
-    text-align:center;
-    display:block;
-    color:#343434;
-    text-decoration:none;
-}
-.book2 {
-    margin-left:0px;
-    width:105px;
-    float:left;
-}
-.p_r2 {
-    height:252px;
 }
 .p_r22 {
-    height:30px;
-}
-.p_r221 {
     font:bold 14px "Microsoft YaHei";
     float:left;
-    margin-left:50px;
-    line-height:30px;
-    color:#343434;
-    text-decoration:none;
+    margin-top:16px;
+    margin-left:15px;
 }
-.p_r222 {
-    font:12px "Microsoft YaHei";
-    float:left;
-    margin-left:10px;
-    line-height:30px;
-    text-decoration:underline;
-    color:#343434;
+.p_r23 {
+    font:14px "Microsoft YaHei";
+    margin-top:14px;
 }
+.p_r3 {
+    font:bold 14px "Microsoft YaHei";
+    margin-top:13px;
+    text-align:center;
+    width:355px;
+    height:20px;
+}
+.p_r4 {
+    height:281px;
+}
+table {
+    font:bold 14px "Microsoft YaHei";
+    text-align:left;
+
+}
+th {
+    height:60px;
+}
+td {
+    height:20px;
+}
+.t1 {
+    width:130px;
+}
+.t2 {
+    width:130px;
+}
+.t3 {
+    width:100px;
+}
+.t4 {
+    width:110px;
+}
+
+
+
+
+
+
+
 .number {
     width:360px;
     height:30px;
