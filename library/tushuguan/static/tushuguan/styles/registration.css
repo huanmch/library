@@ -19,7 +19,7 @@ body {
 }
 .shelf2 {
     position:absolute;
-    left:635px;
+    left:544px;
     top:215px;
 }
 .wood {
@@ -42,7 +42,6 @@ body {
     position:relative;
     font:bold 24px "Microsoft YaHei";
     text-align: center;
-   /* line-height:24px;*/
 }
 .registration2 {
     font:bold 18px "Microsoft YaHei";

@@ -19,7 +19,7 @@ body {
 }
 .shelf2 {
     position:absolute;
-    left:635px;
+    left:544px;
     top:215px;
 }
 .wood {
@@ -42,7 +42,6 @@ body {
     position:relative;
     font:bold 24px "Microsoft YaHei";
     text-align: center;
-   /* line-height:24px;*/
 }
 .entry2 {
     font:bold 18px "Microsoft YaHei";
@@ -53,10 +52,10 @@ body {
     width:180px;
     height:27px;
     position:absolute;
-    top:50px;  
+    top:55px;  
     left:50px;
     background-color:#ffffff;
-    border:6px solid #f3e0bd;
+    border:1px solid #f3e0bd;
 }
 .mima {
     width:180px;
@@ -65,7 +64,7 @@ body {
     top:105px;
     left:50px;
     background-color:#ffffff;
-    border:6px solid #f3e0bd;
+    border:1px solid #f3e0bd;
 }
 .entry3 {
     position:relative;
